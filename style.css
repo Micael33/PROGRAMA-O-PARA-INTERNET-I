@@ -1,11 +1,10 @@
-/* Reset básico */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Fonte geral e fundo da página */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fff8f0;
@@ -14,7 +13,7 @@ body {
   line-height: 1.6;
 }
 
-/* Título principal */
+
 h1 {
   color: #d2691e;
   font-size: 2.5rem;
@@ -22,20 +21,20 @@ h1 {
   text-align: center;
 }
 
-/* Subtítulos */
+
 h2, h3, h4 {
   color: #8b4513;
   margin-top: 30px;
 }
 
-/* Parágrafo introdutório */
+
 p {
   max-width: 800px;
   margin: 0 auto 20px auto;
   text-align: justify;
 }
 
-/* Imagem */
+
 img {
   display: block;
   margin: 20px auto;
@@ -43,7 +42,7 @@ img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Tabela de ingredientes e passos */
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -72,7 +71,7 @@ ol {
   padding-left: 20px;
 }
 
-/* Link do vídeo */
+
 a {
   display: inline-block;
   margin-top: 20px;
@@ -88,7 +87,7 @@ a:hover {
   background-color: #e07b00;
 }
 
-/* Formulário */
+
 form {
   margin-top: 30px;
   background-color: #fffaf0;

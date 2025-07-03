@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Fontes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <script src="script.js"></script>
+
+
+    <title> Eu empreendedor </title>
+</head>
+<body>
+    <header class="container-topo">
+
+        <div class="topo-content">
+            <div class="logo">
+            <i class="fa-solid fa-book"></i>
+            <span>Eu Empreendedor</span>
+            </div>
+
+            <nav id="menu-nav" class="menu">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-store"></i> Negócio</a></li>
+                <li><a href="#"><i class="fa-solid fa-chart-line"></i> Vendas</a></li>
+                <li><a href="#"><i class="fa-solid fa-box"></i> Produtos</a></li>
+                <li><a href="#"><i class="fa-solid fa-bullhorn"></i> Marketing</a></li>
+                <li><a href="cadastro.html" class="login-btn"><i class="fa-solid fa-user"></i>Login</a></li>
+            </ul>
+            </nav>
+
+            <div class="hamburger" id="hamburger-btn">
+            <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+</header>
+
+    <main class="wrapper">
+        <!-- Botão do menu -->
+        <button class="menu-toggle" onclick="toggleSidebar()">☰ Menu</button>
+
+        <!-- Sidebar lateral esquerda -->
+        <div class="container-lateral-esquerdo" id="sidebar">
+            <h2><i class="fas fa-bars"></i> Menu</h2>
+            <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Início</a></li>
+            <li><a href="#"><i class="fas fa-briefcase"></i> Serviços</a></li>
+            <li><a href="#"><i class="fas fa-lightbulb"></i> Projetos</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> Contatos</a></li>
+            <li><a href="#"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            </ul>
+        </div>
+        <div class="container-father">
+
+        <div class="container-form">    
+            <h1> "Seu negócio merece ser visto. Cadastre-se e comece a destacar sua marca no mundo digital."</h1>
+            <form>
+                <div class="field">
+                    <label> Nome </label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Informe seu nome.">
+                    </div>
+                    <p class="help">Campo Obrigatótio*</p>
+                </div>
+                <div class="field">
+                    <label> Email. </label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Informe seu Email.">
+                    </div>
+                </div>
+                <div class="field">
+                    <label> Contato. </label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Informe o contado Whatsapp.">
+                    </div>
+                </div>
+                <div class="field">
+                    <label> Nome da Empresa. </label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Informe o nome da sua Empresa.">
+                    </div>
+                </div>
+                <div class="field">
+                    <label> Como imagina seu site? </label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Descreva como imagina seu ">
+                    </div>
+                </div>
+            <form action="#" method="POST">
+                <!-- seus inputs aqui -->
+                <button type="submit" class="enviar">Enviar</button>
+            </form>
+
+            <div class="row-1">
+                <ul>
+                    <li> <a href="#"> Duvidas?. </a> </li>
+                    <li> <a href="#"> Empreender. </a> </li>
+                    <li> <a href="#"> Passo a passo. </a> </li>
+                    <li> <a href="#"> Fale conosco.</a> </li>
+                </ul>
+            </div>
+            </form>
+
+        </div>
+        
+        <div class="container-image">
+            <div class="min-headline">
+                <h2> Eu Empreendedor. </h2>
+                <p>"Transforme sua ideia em um negócio real: invista em um site profissional e comece hoje a conquistar clientes, gerar vendas e crescer no digital".</p>
+
+            </div>
+            <div class="image-placeholder">
+                <img src="imagens/imagem-fundo1.jpg" alt="Imagem">
+            </div>
+            <div class="container-buttons">
+
+                <div class="row-2">
+                    <h2> “Eu Empreendedor: fortalecendo marcas e gerando vendas!” </h2>
+                    <div class="icons">
+                        <ul>
+                            <li>
+                                <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fa-brands fa-whatsapp"></i> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fa-brands fa-telegram"></i> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fa-brands fa-discord"></i> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    </main>
+</body>
+
+</html>

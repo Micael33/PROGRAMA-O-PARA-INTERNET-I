@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: url('imagens/imagem-fundo1.jpg'); /* substitua pelo caminho da sua imagem */
+  background-size: cover;        /* cobre toda a tela */
+  background-position: center;   /* centraliza a imagem */
+  background-repeat: no-repeat;  /* não repete a imagem */
+  background-attachment: fixed;  /* efeito de paralaxe (opcional) */
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.container-topo {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1); ;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.topo-content {
+  max-width: 1260px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 200px; /* isso joga a logo pra direita */
+}
+
+
+.menu ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+  background: rgba(18, 163, 83, 0.719); ;
+}
+
+.login-btn {
+  background: rgba(255, 255, 255, 0.1); ;
+  color: #eaf7e9 !important;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+  color: rgb(245, 242, 242);
+  font-size: 26px;
+  cursor: pointer;
+}
+
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+}
+
+
+.container-topo ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container-topo ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.container-topo ul li a:hover {
+  color: #000000;
+}
+
+/* Botão menu (hamburguer) */
+.menu-toggle {
+  position: fixed;
+  top: 0px;
+  left: 20px;
+  z-index: 999; /* Mantém atrás da sidebar */
+  background-color: transparent;
+  color: white;
+  padding: 14px 20px; /* Aumentei o padding para ficar maior */
+  font-size: 22px;    /* Aumentei o tamanho da fonte */
+  border: 0.1px solid white; /* Deixa o botão com borda para ficar mais visível */
+  border-radius: 7px;       /* Bordas arredondadas mais suaves */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+  font-family: "Poppins", sans-serif;
+}
+
+/* Quando o mouse passa por cima */
+.menu-toggle:hover {
+  background-color: rgba(18, 163, 83, 0.8); /* Verde forte translúcido */
+  color: #ffffff; /* Texto branco para contraste */
+  border-color: rgba(18, 163, 83, 0.8); /* Borda verde */
+}
+
+
+/* Sidebar transparente */
+.container-lateral-esquerdo {
+  position: fixed;
+  top: 0;
+  left: -270px; /* escondido inicialmente */
+  width: 250px;
+  height: 100%;
+  background:rgba(255, 255, 255, 0.1); /* transparente */
+  backdrop-filter: blur(8px);
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+
+/* Quando ativa, aparece */
+.container-lateral-esquerdo.active {
+  left: 0;
+}
+
+.container-lateral-esquerdo h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.container-lateral-esquerdo ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container-lateral-esquerdo ul li {
+  margin-bottom: 20px;
+}
+
+.container-lateral-esquerdo ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+}
+
+.container-lateral-esquerdo ul li a:hover {
+  background-color: rgba(18, 163, 83, 0.8); /* verde claro transparente */ 
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.container-father {
+  background: rgba(255, 255, 255, 0.1);     /* fundo branco transparente */
+  backdrop-filter: blur(10px);             /* aplica o desfoque */   /* compatibilidade com Safari */
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin: 100px 15px 20px 5px;
+}
+
+.container-father .container-form {
+ background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  max-width: 1000px;
+  height: 90vh;            
+  overflow-y: auto;       
+  padding: 15px 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.container-father .container-form h1 {
+    font-size: 22px;
+    color: #f8f9fa;
+    margin: 20px 10px;
+    text-align: center;
+}
+
+.container-father .container-form .field {
+    padding: 2px 10px;
+}
+
+.container-father .container-form .field label {
+    color: #FFFFFF;
+    margin: 10px 0px;
+    font-size: 20px;
+}
+
+.container-father .container-form .field input {
+    background: #fafafa;
+    margin: 10px 0px;
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 8px;
+    color: #AB9279;
+    outline: none;
+    border: none;
+}
+
+.container-father .container-form .field input::placeholder {
+    color: #eeece3;
+    font-size: 16px;
+    opacity: .4;
+}
+
+.container-father .container-form .field .help {
+    color: #e9e8e5;
+}
+
+.container-father .container-form .container-buttons {
+    padding: 0px 0px;
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-father .container-form .row-1 ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-father .container-form .row-1 ul li {
+    margin: 10px 10px;
+    list-style: none;
+}
+
+.container-father .container-form .row-1 ul li a {
+    color: #ecece8;
+    opacity: .8;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.container-father .container-image .min-headline p {
+    color: #fafafa;
+    opacity: .8;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+
+}
+
+
+.enviar {
+  background-color: #f9fafaf8; 
+  color: rgb(29, 17, 17);               
+  padding: 10px 20px;         
+  border: none;               
+  border-radius: 5px;         
+  font-size: 16px;
+  cursor: pointer;            
+  transition: background 0.3s ease;
+  display: block;
+  margin: 20px auto;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.enviar:hover {
+  background-color:rgba(18, 163, 83, 0.719); /* muda a cor ao passar o mouse */
+  transform: scale(1.05);
+}
+
+
+.container-father .container-image .container-buttons .row-2 {
+    background: transparent;
+    margin: 10px 0px;
+    padding: 0px 10px;
+}
+
+.container-father .container-image .container-buttons .row-2 h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    color: #eeeeec;
+    font-size: 25px;
+}
+
+.container-father .container-image .container-buttons .row-2 .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     background: transparent;;
+    border-radius: 12px;
+    margin: 10px 0px;
+}
+
+.container-father .container-image .container-buttons .row-2 .icons ul {
+    display: flex;
+}
+
+.container-father .container-image .container-buttons .row-2 .icons ul li {
+    list-style: none;
+    margin: 20px 0px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px;
+}
+
+.container-father .container-image .container-buttons .row-2 .icons ul li i {
+    font-size: 20px;
+    color: #1a170a;
+}
+
+.container-father .container-image {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.container-father .container-image .min-headline {
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+    background: transparent;
+    margin: auto;
+    
+}
+
+.container-father .container-image .min-headline h2 {
+    font-size: 35px;
+    margin-bottom: 8px;
+    color: #fafafa;
+}
+
+.container-father .container-image .min-headline p {
+    font-size: 25px;
+    color: #fafafa;
+    opacity: .8;
+}
+
+.container-father .container-image .image-placeholder {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.container-father .container-image .image-placeholder img {
+    width: 100%;           /* Reduz o tamanho da imagem proporcionalmente */
+    max-width: 500px;     /* Limita a largura máxima */
+    height: auto;         /* Mantém a proporção da imagem */
+    border-radius: 20px;  /* Borda arredondada se desejar */
+    margin: 10px px;
+}
+
+@media (max-width: 768px) {
+  .container-father {
+    grid-template-columns: 1fr;
+    margin: 140px 10px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+  }
+}
+

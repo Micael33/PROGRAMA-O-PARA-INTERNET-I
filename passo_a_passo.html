@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Passo a Passo: GitHub e Terminal</title>
+</head>
+<body>
+    <h1>Como criar um repositório e subir arquivos usando o terminal (Windows)</h1>
+    
+    <ol>
+        <li>Acessar o <a href="https://github.com">GitHub</a> e criar um repositório novo, sem README.</li>
+        <li>Abrir o terminal (Git Bash ou cmd).</li>
+        <li>Clonar o repositório com:
+            <pre>git clone https://github.com/Micael33/TrabalhoPI.git</pre>
+        </li>
+        <li>Acessar o diretório:
+            <pre>cd TrabalhoPI</pre>
+        </li>
+        <li>Criar um diretório:
+            <pre>mkdir passo-a-passo</pre>
+        </li>
+        <li>Acessar o diretório criado:
+            <pre>cd passo-a-passo</pre>
+        </li>
+        <li>Criar um arquivo HTML:
+            <pre>echo > guia.html</pre>
+        </li>
+        <li>Escrever este passo a passo dentro do arquivo em HTML.</li>
+        <li>Salvar o arquivo.</li>
+        <li>Adicionar os arquivos para commit:
+            <pre>git add .</pre>
+        </li>
+        <li>Fazer o commit com uma mensagem:
+            <pre>git commit -m "Adiciona guia passo a passo"</pre>
+        </li>
+        <li>Enviar as alterações para o GitHub:
+            <pre>git push origin main</pre>
+            ou, dependendo do nome do branch:
+            <pre>git push origin master</pre>
+        </li>
+    </ol>
+
+    <p>Pronto! Trabalho finalizado no repositório do GitHub.</p>
+</body>
+</html>

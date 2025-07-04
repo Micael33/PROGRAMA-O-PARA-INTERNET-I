@@ -1,0 +1,46 @@
+ASSO 1: Acesse o diretório do projeto
+
+cd /caminho/para/meu_site
+Ou, se estiver na pasta atual:
+
+cd meu_site
+PASSO 2: Inicialize o repositório Git
+
+git init
+✅ Isso cria a pasta oculta .git, que controla a versão.
+
+PASSO 3: Adicione os arquivos ao Git
+
+git add .
+✅ O ponto . significa: adicione todos os arquivos e pastas daqui.
+
+PASSO 4: Faça o commit
+
+git commit -m "Primeiro commit: adicionando site HTML"
+✅ Sempre coloque uma mensagem clara.
+✅ Esse commit salva localmente.
+
+PASSO 5: Crie um repositório no GitHub
+Acesse: https://github.com/new.
+
+Dê um nome ao repositório, por exemplo: meu_site.
+
+Não marque a opção “Initialize this repository with a README” (ou precisará fazer git pull antes).
+
+PASSO 6: Conecte o repositório local ao GitHub
+No terminal, digite:
+
+
+git remote add origin https://github.com/seu_usuario/meu_site.git
+ou, se preferir SSH (mais seguro):
+
+
+git remote add origin git@github.com:seu_usuario/meu_site.git
+✅ Substitua seu_usuario pelo seu usuário do GitHub.
+
+PASSO 7: Envie os arquivos para o GitHub
+
+git push -u origin master
+ou, se o GitHub usar main como branch padrão:
+
+git push -u origin main
